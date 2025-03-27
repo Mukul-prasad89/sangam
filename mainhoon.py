@@ -6,14 +6,14 @@ import io
 st.set_page_config(page_title="📖 Sangam Magazine", layout="wide")
 
 # Load PDF
-PDF_FILE = "sangam.pdf"  # Make sure this file is in the same directory
+PDF_FILE = "Sangammain.pdf"  # Make sure this file is in the same directory
 
-st.title("📖 Sangam Annual Magazine 2023-24")
+st.title("Sangam Annual Magazine 2023-24")
 
 # Convert PDF pages to images
 pdf = fitz.open(PDF_FILE)
 
-st.info(f"Loaded {len(pdf)} pages. Scroll down to read! 📜")
+st.info(f"Loaded {len(pdf)} pages. Scroll down to read! ")
 
 for page_num in range(len(pdf)):
     page = pdf.load_page(page_num)
